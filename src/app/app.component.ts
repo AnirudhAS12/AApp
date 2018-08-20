@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  showPara =true;
+  log =[];
+
+   onToggleDetails(){
+    this.showPara=!this.showPara;
+    this.log.push(new Date());
+   }
 }
